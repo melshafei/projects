@@ -1,0 +1,24 @@
+	
+	mov r3, 0
+
+	call Fib
+	inc r3
+	jmp -2
+
+
+        cmp r3, 0
+	jz iff0
+        cmp r3, 1
+        je iff1
+
+        dec ecx
+        call Fib
+        mov ebx, eax
+        dec ecx
+        call Fib
+        add eax, ebx
+
+        ret
+iff0:   mov eax, 0
+        ret
+iff1:   mov eax, 1

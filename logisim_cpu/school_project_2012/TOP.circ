@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.7.1" version="1.0">
+This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="fanout" val="16"/>
+      <a name="incoming" val="16"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Constant">
+      <a name="width" val="16"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1">
+    <tool name="NOT Gate">
+      <a name="facing" val="west"/>
+    </tool>
+    <tool name="AND Gate">
+      <a name="facing" val="south"/>
+    </tool>
+    <tool name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </tool>
+    <tool name="NAND Gate">
+      <a name="inputs" val="16"/>
+    </tool>
+    <tool name="NOR Gate">
+      <a name="facing" val="south"/>
+      <a name="inputs" val="3"/>
+    </tool>
+    <tool name="XOR Gate">
+      <a name="width" val="16"/>
+      <a name="inputs" val="2"/>
+    </tool>
+  </lib>
+  <lib desc="#Plexers" name="2">
+    <tool name="Multiplexer">
+      <a name="facing" val="south"/>
+      <a name="select" val="3"/>
+      <a name="width" val="4"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="3">
+    <tool name="Comparator">
+      <a name="width" val="4"/>
+    </tool>
+  </lib>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="6">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <lib desc="file#M:\Uni\COE205\logisim\CUsel.circ" name="7"/>
+  <lib desc="file#M:\Uni\COE205\logisim\BUSnew.circ" name="8"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="6" map="Button2" name="Menu Tool"/>
+    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="6" map="Button3" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="6" name="Poke Tool"/>
+    <tool lib="6" name="Edit Tool"/>
+    <tool lib="6" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="SansSerif plain 12"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <sep/>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="labelloc" val="east"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(600,430)" to="(750,430)"/>
+    <wire from="(790,270)" to="(790,490)"/>
+    <wire from="(570,370)" to="(570,480)"/>
+    <wire from="(630,350)" to="(630,390)"/>
+    <wire from="(490,320)" to="(490,490)"/>
+    <wire from="(600,350)" to="(600,370)"/>
+    <wire from="(400,230)" to="(530,230)"/>
+    <wire from="(510,440)" to="(550,440)"/>
+    <wire from="(560,350)" to="(560,380)"/>
+    <wire from="(620,450)" to="(780,450)"/>
+    <wire from="(630,510)" to="(770,510)"/>
+    <wire from="(490,490)" to="(540,490)"/>
+    <wire from="(580,390)" to="(630,390)"/>
+    <wire from="(650,280)" to="(780,280)"/>
+    <wire from="(540,350)" to="(540,390)"/>
+    <wire from="(630,520)" to="(800,520)"/>
+    <wire from="(600,430)" to="(600,480)"/>
+    <wire from="(770,310)" to="(770,510)"/>
+    <wire from="(620,450)" to="(620,480)"/>
+    <wire from="(630,490)" to="(790,490)"/>
+    <wire from="(570,170)" to="(590,170)"/>
+    <wire from="(590,170)" to="(590,230)"/>
+    <wire from="(780,280)" to="(780,450)"/>
+    <wire from="(650,270)" to="(790,270)"/>
+    <wire from="(550,440)" to="(550,480)"/>
+    <wire from="(760,330)" to="(760,440)"/>
+    <wire from="(590,380)" to="(590,480)"/>
+    <wire from="(580,390)" to="(580,480)"/>
+    <wire from="(540,390)" to="(560,390)"/>
+    <wire from="(400,170)" to="(430,170)"/>
+    <wire from="(570,370)" to="(600,370)"/>
+    <wire from="(560,380)" to="(590,380)"/>
+    <wire from="(400,170)" to="(400,230)"/>
+    <wire from="(490,320)" to="(510,320)"/>
+    <wire from="(510,350)" to="(510,440)"/>
+    <wire from="(410,440)" to="(510,440)"/>
+    <wire from="(570,230)" to="(590,230)"/>
+    <wire from="(750,340)" to="(750,430)"/>
+    <wire from="(800,300)" to="(800,520)"/>
+    <wire from="(650,330)" to="(760,330)"/>
+    <wire from="(650,340)" to="(750,340)"/>
+    <wire from="(530,230)" to="(530,260)"/>
+    <wire from="(650,310)" to="(770,310)"/>
+    <wire from="(650,300)" to="(800,300)"/>
+    <wire from="(610,440)" to="(610,480)"/>
+    <wire from="(610,440)" to="(760,440)"/>
+    <wire from="(560,390)" to="(560,480)"/>
+    <wire from="(570,230)" to="(570,260)"/>
+    <comp lib="4" loc="(570,170)" name="ROM">
+      <a name="addrWidth" val="9"/>
+      <a name="dataWidth" val="16"/>
+      <a name="contents">addr/data: 9 16
+8ab0 8ab0 9040 2050 b500 8752 8572 ffff
+8*0 8ab0 8ab0 9040 2050 b500 8752 8572
+ffff 8*0 8ab0 8ab0 2050 b500 8752 8572
+ffff 9*0 8ab0 8ab0 2050 b500 8752 8572
+ffff 9*0 8ab0 8ab0 9040 2050 b500 8752
+8572 ffff 8*0 8ab0 8ab0 9040 2050 b500
+8752 8572 ffff 8*0 8ab0 8ab0 9040 2050
+b500 8752 8572 ffff 8*0 8ab0 8ab0 9040
+2050 b500 8752 8572 ffff 8*0 8ab0 8ab0
+9040 2050 b500 8752 8572 ffff 8*0 8ab0
+8ab0 9040 2050 b500 8752 8572 ffff 8*0
+8ab0 8ab0 9040 2050 b500 8752 8572 ffff
+8*0 8ab0 8ab0 9040 2050 b500 8752 8572
+ffff 8*0 8ab0 8ab0 9040 2050 b500 8752
+8572 ffff 8*0 8ab0 8ab0 9040 2050 b500
+8752 8572 ffff 8*0 8ab0 8ab0 9040 2050
+b500 8752 8572 ffff 8*0 8ab0 8ab0 9040
+2050 b500 8752 8572 ffff 8*0 8ab0 8ab0
+c000 8752 8572 ffff 10*0 8ab0 8ab0 a040
+c000 d400 8752 8572 ffff 8*0 8ab0 8ab0
+9040 8750 8572 ffff 10*0 8ab0 8ab0 9040
+a051 8752 8572 ffff 9*0 8ab0 8ab0 9060
+8f90 b900 8752 8572 ffff 8*0 8ab0 8ab0
+9060 a0a0 8752 8572 ffff 9*0 8ab0 8ab0
+9060 a051 a0a0 b900 8752 8572 ffff 7*0
+8ab0 8ab0 9040 8750 8572 ffff 10*0 8ab0
+8ab0 9040 8750 8572 ffff 10*0 8ab0 8ab0
+9040 8750 8572 ffff 10*0 8ab0 8ab0 253
+8520 9040 8750 8572 ffff 8*0 8ab0 8ab0
+8c60 a0a0 8c53 85c0 8752 8572 ffff 7*0
+8ab0 8ab0 8c52 85c0 8c60 8f90 b900 8752
+8572 ffff 6*0 8ab0 8ab0 8c60 87a0 9070
+8c53 85c0 ffff 8*0 8ab0 8ab0 8c52 85c0
+8c60 8f90 8970 8752 8572 ffff
+</a>
+    </comp>
+    <comp lib="8" loc="(630,490)" name="main"/>
+    <comp lib="7" loc="(580,350)" name="main"/>
+    <comp lib="0" loc="(410,440)" name="Clock"/>
+  </circuit>
+</project>
